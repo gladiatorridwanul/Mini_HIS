@@ -1,0 +1,98 @@
+/* Print Styles for UniDia Application */
+@media print {
+    @page {
+        size: A4;
+        margin: 1cm;
+    }
+    
+    body {
+        background: white !important;
+        color: black !important;
+        font-size: 12pt;
+    }
+    
+    .sidebar,
+    .topbar,
+    .btn,
+    .no-print,
+    .modal,
+    .dropdown-menu,
+    #sidebarToggle,
+    .mobile-menu-overlay {
+        display: none !important;
+    }
+    
+    .main-content {
+        margin: 0 !important;
+        padding: 0 !important;
+        width: 100% !important;
+    }
+    
+    .card {
+        border: 1px solid #ddd !important;
+        box-shadow: none !important;
+        page-break-inside: avoid;
+    }
+    
+    .card-header {
+        background: #f8f9fa !important;
+        color: black !important;
+        border-bottom: 2px solid #ddd !important;
+    }
+    
+    table {
+        width: 100% !important;
+        border-collapse: collapse !important;
+    }
+    
+    table th,
+    table td {
+        border: 1px solid #ddd !important;
+        padding: 8px !important;
+    }
+    
+    table th {
+        background: #f8f9fa !important;
+        font-weight: bold;
+    }
+    
+    .badge {
+        border: 1px solid #000 !important;
+        color: #000 !important;
+        background: none !important;
+        padding: 2px 6px;
+    }
+    
+    a {
+        color: black !important;
+        text-decoration: none !important;
+    }
+    
+    .container-fluid,
+    .container {
+        width: 100% !important;
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+    
+    .col-lg-4, .col-lg-8, .col-md-6 {
+        width: 100% !important;
+        flex: none !important;
+        max-width: 100% !important;
+    }
+    
+    .queue-display {
+        background: white !important;
+        color: black !important;
+        border: 1px solid #ddd !important;
+    }
+    
+    .queue-number {
+        color: black !important;
+    }
+    
+    .chart-container,
+    canvas {
+        max-width: 100% !important;
+    }
+}
